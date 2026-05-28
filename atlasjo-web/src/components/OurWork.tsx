@@ -102,9 +102,11 @@ export default function OurWork() {
                   </span>
                 </div>
                 
-                <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-[#111111] mb-2">
-                  {project.title}
-                </h3>
+                <a href={project.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors relative z-20 w-fit block">
+                  <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-[#111111] mb-2">
+                    {project.title}
+                  </h3>
+                </a>
                 <span className="text-sm font-bold tracking-widest text-[#111111]/40 uppercase mb-6 block">
                   {project.category}
                 </span>
@@ -126,7 +128,7 @@ export default function OurWork() {
                   href={project.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-sm font-black tracking-[0.2em] uppercase text-[#111111] hover:text-primary transition-colors w-fit group/btn"
+                  className="inline-flex items-center gap-3 text-sm font-black tracking-[0.2em] uppercase text-[#111111] hover:text-primary transition-colors w-fit group/btn relative z-20"
                 >
                   <span className="relative overflow-hidden">
                     <span className="block transition-transform duration-300 group-hover/btn:-translate-y-full">VIEW PROJECT</span>
@@ -144,7 +146,7 @@ export default function OurWork() {
                 href={project.href}
                 target="_blank"
                 rel="noopener noreferrer" 
-                className="relative w-full rounded-xl overflow-hidden bg-white shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] border border-[#111111]/5 transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.12)] block cursor-pointer mt-6 lg:mt-0"
+                className="relative z-20 w-full rounded-xl overflow-hidden bg-white shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] border border-[#111111]/5 transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_-10px_rgba(0,0,0,0.12)] block cursor-pointer mt-6 lg:mt-0"
               >
                 {/* Browser Window Header */}
                 <div className="h-10 bg-[#F3F4F6] border-b border-[#111111]/5 flex items-center px-4 gap-2 relative z-10">
